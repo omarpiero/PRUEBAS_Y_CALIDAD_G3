@@ -1,0 +1,29 @@
+﻿
+Warning: Module "mysqli" is already loaded in Unknown on line 0
+
+Warning: Module "mysqli" is already loaded in Unknown on line 0
+PHP Warning:  Module "mysqli" is already loaded in Unknown on line 0
+
+   PASS  Tests\Unit\CoursePublishingServiceTest
+  ✓ course cannot be published if missing basic fields                                                           1.07s  
+  ✓ course cannot be published without active modules                                                            0.05s  
+  ✓ course cannot be published if active module has no materials                                                 0.06s  
+  ✓ course can be published if all criteria met                                                                  0.06s  
+
+   PASS  Tests\Unit\ExampleTest
+  ✓ that true is true                                                                                            0.03s  
+
+   PASS  Tests\Unit\LmsRelationshipsTest
+  ✓ course relationships                                                                                         0.06s  
+  ✓ enrollment relationships                                                                                     0.11s  
+  ✓ roles and permissions relationships                                                                          0.06s  
+
+   PASS  Tests\Unit\VideoEmbedServiceTest
+  ✓ youtube url conversion                                                                                       0.05s  
+  ✓ vimeo url conversion                                                                                         0.05s  
+  ✓ upload returns input directly                                                                                0.05s  
+  ✓ invalid urls return null                                                                                     0.05s  
+
+  Tests:    12 passed (43 assertions)
+  Duration: 2.17s
+

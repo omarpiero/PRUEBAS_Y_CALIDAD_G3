@@ -1,0 +1,43 @@
+﻿
+Warning: Module "mysqli" is already loaded in Unknown on line 0
+
+Warning: Module "mysqli" is already loaded in Unknown on line 0
+PHP Warning:  Module "mysqli" is already loaded in Unknown on line 0
+
+   PASS  Tests\Feature\AdminCourseMaterialTest
+  ✓ admin can create module                                                                                      1.58s  
+  ✓ admin can update module                                                                                      0.08s  
+  ✓ admin can reorder modules                                                                                    0.08s  
+  ✓ admin can create video material by url                                                                       0.11s  
+  ✓ admin can create video material by upload                                                                    0.23s  
+  ✓ file upload validation limits                                                                                0.14s  
+  ✓ rich text material with quill sanitization                                                                   0.09s  
+  ✓ file cleanup on material replacement and deletion                                                            0.13s  
+  ✓ admin can update file material metadata without reuploading file                                             0.12s  
+  ✓ admin must upload new file when switching file material type                                                 0.13s  
+  ✓ admin validates replacement file when type is not submitted                                                  0.12s  
+  ✓ admin cannot upload file to text material                                                                    0.10s  
+
+   PASS  Tests\Feature\AdminDashboardAnalyticsTest
+  ✓ non admin cannot access dashboard analytics                                                                  0.18s  
+  ✓ admin can view dashboard analytics kpis                                                                      0.17s  
+  ✓ metric caching and invalidation                                                                              0.35s  
+
+   PASS  Tests\Feature\AdminSalesAndCouponsTest
+  ✓ non admin cannot access sales and coupons admin                                                              0.10s  
+  ✓ admin can manage students and enrollments                                                                    0.15s  
+  ✓ admin can crud coupons                                                                                       0.09s  
+  ✓ cart coupon application rules                                                                                0.09s  
+  ✓ checkout processes order with coupon                                                                         0.09s  
+
+   PASS  Tests\Feature\GeminiAssistantTest
+  ✓ chat endpoint calls gemini with course context and history                                                   0.15s  
+  ✓ chat endpoint reports gemini not configured                                                                  0.09s  
+
+   PASS  Tests\Feature\LmsReleaseReadinessTest
+  ✓ lms factories create a complete purchase graph                                                               0.08s  
+  ✓ database seeder provides idempotent demo lms data                                                            0.46s  
+
+  Tests:    24 passed (128 assertions)
+  Duration: 5.62s
+

@@ -1,0 +1,51 @@
+﻿
+Warning: Module "mysqli" is already loaded in Unknown on line 0
+
+Warning: Module "mysqli" is already loaded in Unknown on line 0
+PHP Warning:  Module "mysqli" is already loaded in Unknown on line 0
+
+   PASS  Tests\Feature\AdminCourseCrudTest
+  ✓ non admin cannot access course admin pages                                                                   1.22s  
+  ✓ admin can view courses list                                                                                  0.13s  
+  ✓ admin can create course                                                                                      0.18s  
+  ✓ admin can update course                                                                                      0.08s  
+  ✓ admin can duplicate course                                                                                   0.13s  
+  ✓ admin can publish and unpublish course                                                                       0.10s  
+  ✓ admin cannot delete course with active enrollments                                                           0.06s  
+  ✓ admin can delete course without active enrollments                                                           0.06s  
+
+   PASS  Tests\Feature\PaymentStripeTest
+  ✓ pago with empty cart redirects to cursos                                                                     0.10s  
+  ✓ process creates pending sale and redirects to stripe                                                         0.09s  
+  ✓ process without stripe configured redirects with message                                                     0.06s  
+  ✓ checkout rolls back sale when sale item fails                                                                0.10s  
+  ✓ success redirect confirms sale idempotently                                                                  0.23s  
+  ✓ webhook confirms paid checkout session                                                                       0.07s  
+  ✓ invalid webhook signature returns bad request                                                                0.06s  
+  ✓ pending coupon reservation blocks overuse before payment confirmation                                        0.09s  
+
+   PASS  Tests\Feature\PublicCourseCatalogTest
+  ✓ catalog lists only published courses                                                                         0.08s  
+  ✓ catalog filters by level                                                                                     0.08s  
+  ✓ catalog filters by category                                                                                  0.08s  
+  ✓ catalog filters by search query                                                                              0.08s  
+  ✓ public user can view published course detail                                                                 0.06s  
+  ✓ public user cannot view draft course detail                                                                  0.06s  
+  ✓ admin user can view draft course detail                                                                      0.07s  
+  ✓ cart operations using course id                                                                              0.08s  
+  ✓ cannot add unpublished course to cart                                                                        0.06s  
+  ✓ checkout processes correct enrollments                                                                       0.08s  
+
+   PASS  Tests\Feature\StudentCourseAccessTest
+  ✓ guest cannot access classroom                                                                                0.08s  
+  ✓ user without enrollment cannot access classroom                                                              0.07s  
+  ✓ user with pending enrollment cannot access classroom                                                         0.07s  
+  ✓ user with suspended enrollment cannot access classroom                                                       0.07s  
+  ✓ user with active enrollment can access classroom                                                             0.08s  
+  ✓ toggle material completion updates progress                                                                  0.10s  
+  ✓ unauthorized user cannot download private files                                                              0.13s  
+  ✓ enrolled user can access private files                                                                       0.13s  
+
+  Tests:    34 passed (158 assertions)
+  Duration: 4.77s
+

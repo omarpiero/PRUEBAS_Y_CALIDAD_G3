@@ -1,0 +1,36 @@
+﻿
+Warning: Module "mysqli" is already loaded in Unknown on line 0
+
+Warning: Module "mysqli" is already loaded in Unknown on line 0
+PHP Warning:  Module "mysqli" is already loaded in Unknown on line 0
+
+   PASS  Tests\Unit\LmsRelationshipsTest
+  ✓ course relationships                                                                                         1.10s  
+  ✓ enrollment relationships                                                                                     0.13s  
+  ✓ roles and permissions relationships                                                                          0.08s  
+
+   PASS  Tests\Feature\AdminSecurityAndRolesTest
+  ✓ security headers are present                                                                                 0.25s  
+  ✓ production csp does not allow inline or eval                                                                 0.07s  
+  ✓ login rate limiting                                                                                          1.22s  
+  ✓ chatbot rate limiting                                                                                        0.36s  
+  ✓ chatbot message sanitization                                                                                 0.06s  
+  ✓ setting helper caching and invalidation                                                                      0.06s  
+  ✓ roles admin routes protection                                                                                0.11s  
+  ✓ admin role without legacy flag keeps admin access                                                            0.11s  
+  ✓ support role can access only support areas                                                                   0.15s  
+  ✓ instructor can only manage own courses                                                                       0.12s  
+  ✓ user roles sync and is admin sync                                                                            0.09s  
+  ✓ last admin cannot be demoted                                                                                 0.06s  
+  ✓ audit logs routes protection and filters                                                                     0.08s  
+  ✓ audit export is protected and respects filters                                                               0.08s  
+
+   PASS  Tests\Feature\PermissionMiddlewareTest
+  ✓ guest is unauthorized                                                                                        0.08s  
+  ✓ admin user can bypass permission check                                                                       0.06s  
+  ✓ user without permission is forbidden                                                                         0.07s  
+  ✓ user with permission can access                                                                              0.06s  
+
+  Tests:    21 passed (109 assertions)
+  Duration: 4.93s
+
