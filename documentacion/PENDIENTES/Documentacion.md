@@ -33,10 +33,32 @@ Adicional a los capítulos, se generó un respaldo académico riguroso en el dir
 
 ---
 
-## 3. Instrucciones de Uso para el Informe Final
+## 3. Documento Consolidado (Fuente Principal)
+
+> **`INFORME_COMPLETO_COMPLEMENTADO.md`** — Versión completa del informe final que integra TODOS los markdowns anteriores, corrige discrepancias con el PDF original y añade contenido de capítulos vacíos (especialmente Cap 4.4 Casos de Uso, Cap 6 Diseño, Cap 14 Implementación). Este es el documento principal para usar en la sesión de redacción en Cowork.
+
+### Correcciones aplicadas en el documento consolidado
+
+| Punto corregido | PDF original (incorrecto) | Versión corregida |
+|---|---|---|
+| Framework de pruebas | Cypress | PHPUnit 11 |
+| PHP | 8.2 | 8.5.4 |
+| BD producción | SQLite | MySQL 8 (puerto 3307) |
+| Frontend principal | React | Blade + Tailwind (React solo chatbot) |
+| RF totales | 15 | 21 |
+| Tests/Aserciones | — | 89 tests / 426 aserciones |
+| Sección 4.4 Casos de Uso | Vacía | Desarrollada con tablas de actores y flujos |
+
+---
+
+## 4. Instrucciones de Uso para el Informe Final
+
+**Opción A (Recomendada):** Usa `INFORME_COMPLETO_COMPLEMENTADO.md` directamente. Está organizado por capítulos y listo para copiar al documento Word. Incluye todos los marcadores `[PENDIENTE: …]` donde van los diagramas BPMN/UML aún por generar.
+
+**Opción B:** Si necesitas profundidad específica en un capítulo, ve al archivo individual:
 1. Abre tu documento de Word `Proyecto Final-G3`.
 2. Dirígete al capítulo que desees redactar.
-3. Abre el archivo Markdown correspondiente a ese capítulo listado en la tabla superior.
-4. **Copia, adapta y traslada** la información técnica proporcionada en el Markdown hacia tu documento, ya que la información redactada allí no es genérica, sino que contiene los nombres reales de los controladores, middlewares y test de este repositorio, lo que le dará un sustento técnico absoluto a tu proyecto final.
+3. Abre el archivo Markdown correspondiente a ese capítulo listado en la tabla de la sección 1.
+4. **Copia, adapta y traslada** la información técnica proporcionada en el Markdown hacia tu documento.
 
-*Actualizado: Junio 2026*
+*Actualizado: Junio 2026 — Versión con documento consolidado*
