@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Diagramas de Macroprocesos — LMS JM y JS Alimentos v2.0</title>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f5f5f5;
+    color: #1a1a1a;
+  }
+  header {
+    background: #1a3a5c;
+    color: white;
+    padding: 24px 40px;
+    margin-bottom: 32px;
+  }
+  header h1 { font-size: 22px; font-weight: 700; }
+  header p  { font-size: 13px; opacity: 0.8; margin-top: 4px; }
+  .container { max-width: 1400px; margin: 0 auto; padding: 0 24px 48px; }
+  .diagram-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    margin-bottom: 40px;
+    overflow: hidden;
+    page-break-after: always;
+  }
+  .diagram-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 18px 24px;
+    border-bottom: 2px solid #e8eef5;
+  }
+  .badge {
+    background: #1a3a5c;
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 20px;
+    white-space: nowrap;
+  }
+  .badge.estrategico { background: #2563eb; }
+  .badge.operativo   { background: #16a34a; }
+  .badge.soporte     { background: #9333ea; }
+  .diagram-header h2 { font-size: 16px; font-weight: 600; color: #1a3a5c; }
+  .diagram-header .owner { font-size: 12px; color: #666; margin-left: auto; white-space: nowrap; }
+  .diagram-body { padding: 24px; overflow-x: auto; }
+  .mermaid { text-align: center; }
+  .toc {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    padding: 24px;
+    margin-bottom: 32px;
+  }
+  .toc h2 { font-size: 15px; font-weight: 700; margin-bottom: 14px; color: #1a3a5c; }
+  .toc-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 10px; }
+  .toc-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 12px;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #1a1a1a;
+    font-size: 13px;
+    transition: background 0.15s;
+  }
+  .toc-item:hover { background: #f0f4ff; }
+  @media print {
+    .diagram-card { page-break-inside: avoid; box-shadow: none; border: 1px solid #ccc; }
+    header { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .badge { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>Diagramas de Macroprocesos — LMS JM y JS Alimentos v2.0</h1>
+  <p>Plataforma Web de Capacitación, E-commerce y Gestión de Calidad para la Industria Alimentaria · Universidad Continental 2026</p>
+</header>
+
+<div class="container">
+
+  <!-- ÍNDICE -->
+  <div class="toc">
+    <h2>Índice de Macroprocesos</h2>
+    <div class="toc-grid">
+      <a class="toc-item" href="#as-is">📋 AS-IS — Proceso Actual (Manual)</a>
+      <a class="toc-item" href="#to-be">🚀 TO-BE — Proceso Propuesto (LMS)</a>
+      <a class="toc-item" href="#mp01">🔵 MP-01 · Gestión del Catálogo de Cursos</a>
+      <a class="toc-item" href="#mp02">🔵 MP-02 · Gestión de Usuarios y Roles</a>
+      <a class="toc-item" href="#mp03">🔵 MP-03 · Configuración y Auditoría</a>
+      <a class="toc-item" href="#mp04">🟢 MP-04 · Exploración y Selección de Cursos</a>
+      <a class="toc-item" href="#mp05">🟢 MP-05 · Proceso de Compra y Pago</a>
+      <a class="toc-item" href="#mp06">🟢 MP-06 · Consumo de Contenido Educativo</a>
+      <a class="toc-item" href="#mp07">🟣 MP-07 · Soporte Inteligente IA</a>
+      <a class="toc-item" href="#mp08">🟣 MP-08 · Monitoreo e Indicadores</a>
+    </div>
+  </div>
+
+  <!-- AS-IS -->
+  <div class="diagram-card" id="as-is">
+    <div class="diagram-header">
+      <span class="badge">AS-IS</span>
+      <h2>Proceso Actual — Modelo Manual (Antes del LMS)</h2>
+      <span class="owner">Actores: Cliente · Coordinador Digital</span>
+    </div>
+    <div class="diagram-body">
+      <div class="mermaid">
+flowchart TD
+  A(["Cliente ve publicación\nen Facebook o TikTok"]) --> B["Cliente contacta\npor WhatsApp"]
+  B --> C["Coordinador Digital\nresponde manualmente"]
+  C --> D["Coordinador envía\ndetalle de cursos y precios"]
+  D --> E{"¿El cliente\ndesea comprar?"}
+  E -->|"No"| F(["Fin - Abandono\nSin registro"])
+  E -->|"Sí"| G["Coordinador envía\ndatos bancarios por chat"]
+  G --> H["Cliente realiza\ntransferencia bancaria"]
+  H --> I["Cliente envía voucher\ncaptura de pantalla por WhatsApp"]
+  I --> J["Coordinador verifica\nmanualmente en app bancaria\n⚠️ PUNTO CRÍTICO - Demora"]
+  J --> K{"¿Pago\nconfirmado?"}
+  K -->|"No confirmado"| L["Solicitar nuevo\nvoucher o aclaración"]
+  L --> I
+  K -->|"Sí"| M["Coordinador solicita\ndatos del cliente por chat"]
+  M --> N["Registro manual\nen hoja de cálculo Excel\n⚠️ Riesgo de error"]
+  N --> O["Coordinador envía\nacceso a materiales\n por WhatsApp/email"]
+  O --> P(["Cliente recibe PDF/video\nsin plataforma centralizada"])
+
+  style J fill:#fee2e2,stroke:#dc2626,color:#1a1a1a
+  style N fill:#fee2e2,stroke:#dc2626,color:#1a1a1a
+      </div>
+    </div>
+  </div>
+
+  <!-- TO-BE -->
+  <div class="diagram-card" id="to-be">
+    <div class="diagram-header">
+      <span class="badge">TO-BE</span>
+      <h2>Proceso Propuesto — Modelo Automatizado con LMS v2.0</h2>
+      <span class="owner">Actores: Estudiante · Sistema LMS · Stripe · Administrador</span>
+    </div>
+    <div class="diagram-body">
+      <div class="mermaid">
+flowchart TD
+  A(["Visitante descubre\nel LMS en internet"]) --> B["Navega catálogo público\nGET /cursos - 24/7 sin intervención"]
+  B --> C{"¿Tiene cuenta?"}
+  C -->|"No"| D["Se registra en /register\nEmail + contraseña\nBcrypt 12 rondas"]
+  D --> E["Sesión iniciada\nRol: estudiante"]
+  C -->|"Sí"| E
+  E --> F["Agrega curso al carrito\nPOST /cart/add"]
+  F --> G{"¿Usa cupón\nde descuento?"}
+  G -->|"Sí"| H["POST /cart/apply-coupon\nValidación automática"]
+  G -->|"No"| I["Confirma pago\nPOST /pago"]
+  H --> I
+  I --> J["Stripe Checkout\nPCI-DSS - Sin exponer datos de tarjeta"]
+  J --> K{"¿Pago aprobado?"}
+  K -->|"No"| L(["Pago cancelado\nEstudiante notificado"])
+  K -->|"Sí"| M["Stripe emite Webhook\nPOST /stripe/webhook\nFirma HMAC verificada"]
+  M --> N["Sale.payment_status = pagado\nEnrollment creado\n⚡ AUTOMÁTICO - Inmediato"]
+  N --> O["Estudiante accede\nal Aula Virtual /mi-cuenta/cursos"]
+  O --> P["Consume materiales\nPDF + Video seguros\nProgreso tracked"]
+  P --> Q(["Curso completado 100%"])
+
+  style N fill:#dcfce7,stroke:#16a34a,color:#1a1a1a
+  style M fill:#dbeafe,stroke:#2563eb,color:#1a1a1a
+      </div>
+    </div>
+  </div>
+
+  <!-- MP-01 -->
+  <div class="diagram-card" id="mp01">
+    <div class="diagram-header">
+      <span class="badge estrategico">Estratégico</span>
+      <h2>MP-01 · Gestión del Catálogo de Cursos</h2>
+      <span class="owner">Propietario: Administrador / Instructor</span>
+    </div>
+    <div class="diagram-body">
+      <div class="mermaid">
+flowchart LR
+  A(["Admin en /admin/courses"]) --> B["Ver lista de cursos\nAdmin\\CourseController@index"]
+  B --> C{"Acción del Admin"}
+  C -->|"Crear"| D["POST /admin/courses\n@store\nSlug: Str::slug()"]
+  C -->|"Editar"| E["PATCH /admin/courses/{id}\n@update"]
+  C -->|"Publicar"| F["PATCH → @publish\nborrador → publicado"]
+  C -->|"Duplicar"| G["POST → @duplicate\nClonación profunda"]
+  C -->|"Eliminar"| H["DELETE → @destroy\nSoftDeletes - Reversible"]
+  D --> I["Gestionar contenido del curso"]
+  E --> I
+  I -->|"Módulos"| J["CourseModuleController\nOrden posicional JSON\nDrag and drop"]
+  I -->|"Materiales"| K["CourseMaterialController\nMultipart upload\nStorage::disk('local')"]
+  K --> L["Archivo en storage/app/private/\nProtegido de acceso público"]
+  F --> M(["Curso visible en /cursos\nRF-01 satisfecho"])
+      </div>
+    </div>
+  </div>
+
+  <!-- MP-02 -->
+  <div class="diagram-card" id="mp02">
+    <div class="diagram-header">
+      <span class="badge estrategico">Estratégico</span>
+      <h2>MP-02 · Gestión de Usuarios y Roles</h2>
+      <span class="owner">Propietario: Administrador</span>
+    </div>
+    <div class="diagram-body">
+      <div class="mermaid">
+flowchart LR
+  A(["Inicio"]) --> B{"Actor"}
+  B -->|"Nuevo visitante"| C["POST /register\nAuthController@register\nHash::make() Bcrypt"]
+  B -->|"Usuario con cuenta"| D["POST /login\nthrottle:5,1\nAnti fuerza bruta"]
+  B -->|"Admin gestiona usuarios"| E["GET /admin/users\nUserController@index"]
+  C --> F["Usuario creado\nRol: estudiante por defecto"]
+  D --> G{"Credenciales correctas?"}
+  G -->|"No"| H["Error 422\nContador de intentos activo"]
+  G -->|"Sí"| I["session()->regenerate()\nToken CSRF renovado"]
+  I --> J{"Rol del usuario"}
+  J -->|"admin"| K(["Panel /admin\nAcceso completo"])
+  J -->|"estudiante"| L(["Mi Cuenta /mi-cuenta"])
+  E --> M{"Acción Admin"}
+  M -->|"Editar perfil"| N["PATCH /admin/users/{id}\n@update"]
+  M -->|"Cambiar rol"| O["PATCH → @toggleAdmin"]
+  O --> P{"¿Es el último\nadministrador?"}
+  P -->|"SÍ - BLOQUEAR"| Q(["Error: Acción denegada\nRNF-06 Anti-Lockout\nSistema nunca queda sin admin"])
+  P -->|"No"| R(["Rol actualizado exitosamente"])
+
+  style Q fill:#fee2e2,stroke:#dc2626,color:#1a1a1a
+      </div>
+    </div>
+  </div>
+
+  <!-- MP-03 -->
+  <div class="diagram-card" id="mp03">
+    <div class="diagram-header">
+      <span class="badge estrategico">Estratégico</span>
+      <h2>MP-03 · Configuración y Auditoría del Sistema</h2>
+      <span class="owner">Propietario: Administrador</span>
+    </div>
+    <div class="diagram-body">
+      <div class="mermaid">
+flowchart LR
+  A(["Admin autenticado"]) --> B{"Módulo"}
+  B -->|"Configuración"| C["GET /admin/settings\nSettingController@index\nTabla clave-valor"]
+  C --> D["Editar parámetro\nPATCH → @update"]
+  D --> E["Persistido en BD\nsettings.key = value"]
+  B -->|"Cupones"| F["GET /admin/coupons\nCouponController@index"]
+  F --> G{"CRUD Cupones"}
+  G -->|"Crear"| H["POST /admin/coupons\nCódigo + % descuento\nFecha expiración + límite"]
+  G -->|"Editar"| I["PATCH → @update"]
+  G -->|"Eliminar"| J["DELETE → @destroy"]
+  B -->|"Auditoría"| K["GET /admin/audit\nAuditLog::orderBy DESC"]
+  K --> L["Registros inmutables\nactor + acción + payload\n+ timestamp"]
+  L --> M(["Vista read-only\nNo se puede modificar"])
+  E --> N["AuditService::log()\nRegistro automático\nde la acción"]
+  H --> N
+  I --> N
+  J --> N
+  N --> O(["AuditLog: user_id + action\n+ model + changes JSON"])
+
+  style N fill:#dbeafe,stroke:#2563eb,color:#1a1a1a
+      </div>
+    </div>
+  </div>
+
+  <!-- MP-04 -->
+  <div class="diagram-card" id="mp04">
+    <div class="diagram-header">
+      <span class="badge operativo">Operativo</span>
+      <h2>MP-04 · Exploración y Selección de Cursos</h2>
+      <span class="owner">Propietario: Visitante / Estudiante</span>
+    </div>
+    <div class="diagram-body">
+      <div class="mermaid">
+flowchart LR
+  A(["Visitante en /cursos"]) --> B["CourseController@index\nCourse where status=publicado\nwith category - Eager Loading"]
+  B --> C["Blade renderiza catálogo\nTailwind CSS grid responsivo"]
+  C --> D["Visita detalle\nGET /cursos/{slug}"]
+  D --> E{"Autenticado?"}
+  E -->|"No"| F["Ver información pública\nSin opción de compra"]
+  F --> G{"Interesado?"}
+  G -->|"No"| Z1(["Fin - Abandono"])
+  G -->|"Sí"| H["Redirigir a /login\no /register"]
+  H --> E
+  E -->|"Sí"| I["Mostrar botón\nAñadir al carrito"]
+  I --> J{"¿Agregar?"}
+  J -->|"No"| Z2(["Seguir navegando"])
+  J -->|"Sí"| K["POST /cart/add\nCartController@add\nsession put cart"]
+  K --> L["Ver carrito /checkout"]
+  L --> M{"¿Cupón?"}
+  M -->|"Sí"| N["POST /cart/apply-coupon\n@applyCoupon\nValidar fecha y usos"]
+  N --> O{"¿Válido?"}
+  O -->|"No"| P["Error: cupón inválido\no expirado"]
+  O -->|"Sí"| Q["Descuento aplicado\nal total del carrito"]
+  Q --> R(["Ir al pago → MP-05"])
+  M -->|"No"| R
+  P --> M
+      </div>
+    </div>
+  </div>
+
+  <!-- MP-05 -->
+  <div class="diagram-card" id="mp05">
+    <div class="diagram-header">
+      <span class="badge operativo">Operativo</span>
+      <h2>MP-05 · Proceso de Compra y Pago con Stripe</h2>
+      <span class="owner">Propietario: Estudiante / Sistema / Stripe</span>
+    </div>
+    <div class="diagram-body">
+      <div class="mermaid">
+flowchart TD
+  A(["Estudiante en /checkout"]) --> B["POST /pago\nPaymentController@process\nDB::transaction() ACID"]
+  B --> C["Crear Sale + SaleItems\nen memoria transaccional"]
+  C --> D["StripeService\n@createCheckoutSession()\nAPI Stripe"]
+  D --> E{"Sesión Stripe OK?"}
+  E -->|"Error"| F(["Rollback DB\nError mostrado al usuario"])
+  E -->|"OK"| G["HTTP 303 Redirect\nStripe Checkout externo\nPCI-DSS compliant"]
+  G --> H["Estudiante ingresa tarjeta\nen plataforma Stripe segura"]
+  H --> I{"Pago aprobado\npor Stripe?"}
+  I -->|"No"| J(["Redirigir a /pago/cancelado/{sale}\nSale.status = cancelado"])
+  I -->|"Sí"| K["Stripe emite evento\ncheckout.session.completed\nWebhook asíncrono"]
+  K --> L["POST /stripe/webhook\nPaymentController@webhook\nVerificación firma HMAC"]
+  L --> M{"Firma criptográfica\nválida?"}
+  M -->|"No"| N(["HTTP 400 - Rechazado\nPosible ataque o error"])
+  M -->|"Sí"| O{"¿Ya fue procesado?\nVerificación de Idempotencia"}
+  O -->|"Sí - duplicado"| P(["HTTP 200 OK\nDescartado silenciosamente"])
+  O -->|"No - nuevo"| Q["Sale.payment_status = pagado\nCrear Enrollment\nLimpiar carrito en sesión"]
+  Q --> R(["Estudiante accede al\nAula Virtual → MP-06\nAcceso INMEDIATO"])
+
+  style Q fill:#dcfce7,stroke:#16a34a,color:#1a1a1a
+  style L fill:#dbeafe,stroke:#2563eb,color:#1a1a1a
+      </div>
+    </div>
+  </div>
+
+  <!-- MP-06 -->
+  <div class="diagram-card" id="mp06">
+    <div class="diagram-header">
+      <span class="badge operativo">Operativo</span>
+      <h2>MP-06 · Habilitación y Consumo de Contenido Educativo</h2>
+      <span class="owner">Propietario: Estudiante</span>
+    </div>
+    <div class="diagram-body">
+      <div class="mermaid">
+flowchart LR
+  A(["Estudiante autenticado\nen /mi-cuenta"]) --> B["GET /mi-cuenta/cursos/{slug}\nStudentCourseController@show"]
+  B --> C{"Enrollment activo\npara este curso?"}
+  C -->|"No"| D(["HTTP 403 Forbidden\nAcceso denegado al contenido"])
+  C -->|"Sí"| E["Renderizar Aula Virtual\nTemario + módulos + materiales\nBarra de progreso %"]
+  E --> F{"Acción del Estudiante"}
+  F -->|"Solicitar archivo"| G["GET .../materials/{id}/file\n@serveFile()"]
+  G --> H["Storage::disk('local')\nrespuesta binaria protegida\nAnti-hotlinking"]
+  H --> I["Material entregado\nen navegador: PDF o Video"]
+  F -->|"Completar módulo"| J["POST .../toggle\nFetch async JavaScript"]
+  J --> K["Eloquent actualiza tabla pivot\nEnrollment.progress calculado"]
+  K --> L{"Progreso = 100%?"}
+  L -->|"No"| M(["Barra de progreso actualizada\nSiguiente módulo disponible"])
+  L -->|"Sí"| N(["Curso completado\nProgreso 100%"])
+  F -->|"Volver"| O(["GET /mi-cuenta\nMis cursos inscritos"])
+      </div>
+    </div>
+  </div>
+
+  <!-- MP-07 -->
+  <div class="diagram-card" id="mp07">
+    <div class="diagram-header">
+      <span class="badge soporte">Soporte</span>
+      <h2>MP-07 · Soporte Inteligente IA con Google Gemini</h2>
+      <span class="owner">Propietario: Visitante / Chatbot IA</span>
+    </div>
+    <div class="diagram-body">
+      <div class="mermaid">
+flowchart LR
+  A(["Usuario en cualquier página"]) --> B["Abre chatbot flotante\nComponente React AiChat.jsx\nBundleado por Vite 7"]
+  B --> C["Escribe consulta\nen el chat"]
+  C --> D["POST /api/chat\nJSON: message + historial"]
+  D --> E["Api\\ChatController@sendMessage\nLaravel PHP backend"]
+  E --> F["Http::withHeaders()\nAuthorization: Bearer GEMINI_API_KEY\nConexión TLS/HTTPS"]
+  F --> G["Google Gemini API\ngemini-2.5-flash\nTemperature: 0.7 Max Tokens: 500"]
+  G --> H{"Respuesta recibida?"}
+  H -->|"Error de red o timeout"| I["try-catch en PHP\nlogging en storage/logs/laravel.log"]
+  I --> J(["Mensaje de error al usuario\nSugerencia: contactar por formulario"])
+  H -->|"Éxito"| K["Extraer texto de:\ncandidates.content.parts.text"]
+  K --> L["JSON response\nal componente React"]
+  L --> M["Renderizado Markdown\nen burbuja de respuesta"]
+  M --> N{"¿Más preguntas?"}
+  N -->|"Sí"| C
+  N -->|"No"| O(["Sesión de chat finalizada"])
+      </div>
+    </div>
+  </div>
+
+  <!-- MP-08 -->
+  <div class="diagram-card" id="mp08">
+    <div class="diagram-header">
+      <span class="badge soporte">Soporte</span>
+      <h2>MP-08 · Monitoreo de Indicadores y Reportería Financiera</h2>
+      <span class="owner">Propietario: Administrador / Gerencia</span>
+    </div>
+    <div class="diagram-body">
+      <div class="mermaid">
+flowchart LR
+  A(["Admin accede a /admin"]) --> B["DashboardController@index\nSubqueries SQL optimizados"]
+  B --> C["KPI Ingresos\nSale::sum(total_amount)\nwhere payment_status=pagado"]
+  B --> D["KPI Inscripciones\nEnrollment::count()"]
+  B --> E["KPI Actividad Reciente\nAuditLog últimas entradas"]
+  B --> F["KPI Cursos publicados\nCourse where status=publicado"]
+  C --> G["Dashboard: Tarjetas\nde KPIs en tiempo real\nActualización por request"]
+  D --> G
+  E --> G
+  F --> G
+  G --> H{"¿Acción del Admin?"}
+  H -->|"Ver ventas"| I["GET /admin/sales\nSaleController@index\nLibro Mayor Ledger"]
+  I --> J["Filtrar por fecha\ny estado de pago"]
+  J --> K(["Tabla de ventas\npaginada y exportable"])
+  H -->|"Ver auditoría"| L["GET /admin/audit\nAuditLog inmutable\nAuditService registrador"]
+  L --> M(["Historial completo\nde acciones administrativas"])
+  H -->|"Ver contactos"| N["GET /admin/contacts\nContactsController@index"]
+  N --> O(["Bandeja de mensajes\nde formulario público"])
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+  mermaid.initialize({
+    startOnLoad: true,
+    theme: 'base',
+    themeVariables: {
+      primaryColor: '#dbeafe',
+      primaryTextColor: '#1e3a5f',
+      primaryBorderColor: '#2563eb',
+      lineColor: '#4b5563',
+      secondaryColor: '#dcfce7',
+      tertiaryColor: '#f3e8ff',
+      fontSize: '13px'
+    },
+    flowchart: {
+      useMaxWidth: true,
+      htmlLabels: true,
+      curve: 'basis'
+    }
+  });
+</script>
+</body>
+</html>

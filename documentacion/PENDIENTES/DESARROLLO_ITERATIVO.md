@@ -5,8 +5,8 @@
 El desarrollo del LMS v2.0 se ejecutó utilizando una metodología Iterativa e Incremental (Spec-Anchored SDD), garantizando que en cada iteración se liberara un incremento de software funcional y validado.
 
 ## 8.1. Iteración 1: Configuración Inicial del Proyecto (Foundation)
-- **Scaffolding y Entorno:** Se inicializó la aplicación utilizando **Laravel 12** sobre PHP 8.2. Se configuraron los parámetros de entorno en `.env` para asegurar conectividad con la base de datos (MySQL vía XAMPP en puerto 3307).
-- **Frontend Moderno:** Se sustituyó Webpack por **Vite 7** para obtener reemplazo de módulos en caliente (HMR). Se integró **Tailwind CSS v4** y los componentes base de UI usando **React 19**.
+- **Scaffolding y Entorno:** Se inicializó la aplicación utilizando **Laravel 12** sobre PHP 8.5.4. Se configuraron los parámetros de entorno en `.env` para asegurar conectividad con la base de datos (MySQL vía XAMPP en puerto 3307).
+- **Frontend Moderno:** Se sustituyó Webpack por **Vite 7** para obtener reemplazo de módulos en caliente (HMR). Se integró **Tailwind CSS v4** y los componentes base de UI. **React 19** fue integrado exclusivamente para el componente de chatbot (`AiChat.jsx`); el resto de la interfaz usa Blade + Tailwind.
 - **Esquema de Datos (Migraciones):** Generación de las tablas primarias: `users`, `courses`, `categories`, `course_modules`. Estas fueron diseñadas estrictamente según el modelo entidad-relación del proyecto.
 
 ## 8.2. Iteración 2: Desarrollo de Funcionalidades Básicas (Core Business)
@@ -20,5 +20,5 @@ El desarrollo del LMS v2.0 se ejecutó utilizando una metodología Iterativa e I
 - **Indicadores de Calidad (Dashboard):** Se consolidó el `DashboardController` para entregar telemetría en tiempo real: contadores de ingresos, estudiantes matriculados y cursos publicados.
 
 ## 8.4. Iteraciones Posteriores (Refinamiento y Testing)
-- **Blindaje QA:** Despliegue de la suite de 85 pruebas unitarias y de características (`tests/Feature/`) utilizando PHPUnit. Se aplicaron Mocks a la pasarela de Stripe y a Gemini para garantizar que el flujo CI/CD funcionara off-line y de manera idempotente usando la base de datos en memoria (`sqlite`).
+- **Blindaje QA:** Despliegue de la suite de **89 pruebas** (unitarias y de características en `tests/Feature/` y `tests/Unit/`) con **426 aserciones** utilizando PHPUnit 11. Se aplicaron Mocks a la pasarela de Stripe y a Gemini para garantizar que el flujo CI/CD funcionara off-line y de manera idempotente usando la base de datos en memoria (`sqlite:memory`). Tiempo de ejecución total: 27.32 segundos con 100% SUCCESS.
 - **Sistema de Auditoría Inmutable:** Implementación del patrón Singleton `AuditService` para rastrear toda mutación administrativa.
