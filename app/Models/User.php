@@ -25,7 +25,6 @@ class User extends Authenticatable
         'dni',
         'phone',
         'password',
-        'is_admin',
     ];
 
     // ── Relationships ──

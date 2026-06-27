@@ -289,6 +289,18 @@ class AdminSecurityAndRolesTest extends TestCase
         $this->assertFalse((bool)$targetUser->fresh()->is_admin);
     }
 
+    public function test_is_admin_cannot_be_assigned_by_mass_assignment()
+    {
+        $user = User::create([
+            'name' => 'Mass Assignment Attempt',
+            'email' => 'mass.assignment@example.com',
+            'password' => 'password',
+            'is_admin' => true,
+        ]);
+
+        $this->assertFalse((bool) $user->fresh()->is_admin);
+    }
+
     public function test_last_admin_cannot_be_demoted()
     {
         $response = $this->actingAs($this->admin)->from(route('admin.users.edit', $this->admin))

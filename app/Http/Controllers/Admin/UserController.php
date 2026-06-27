@@ -63,7 +63,7 @@ class UserController extends Controller
 
         DB::transaction(function () use ($user, $rolesInput, $isAdminSelected): void {
             $user->roles()->sync($rolesInput);
-            $user->update(['is_admin' => (bool) $isAdminSelected]);
+            $user->forceFill(['is_admin' => (bool) $isAdminSelected])->save();
         });
 
         // Audit Log
