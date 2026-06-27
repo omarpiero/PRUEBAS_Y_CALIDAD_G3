@@ -12,6 +12,12 @@ Esta carpeta contiene los archivos desarrollados para cerrar los pendientes fina
 | `13_mantenimiento_sq_plan_pruebas.md` | Formalizar mantenimiento, SQ y plan de pruebas. |
 | `14_privacidad_terminos_licencias.md` | Controlar privacidad, terminos y licencias. |
 | `15_conclusiones_recomendaciones_cierre.md` | Ajustar conclusiones y recomendaciones al estado real. |
+| `16_repositorio_modulos_integrantes.md` | Unificar Git y preparar tabla de modulos por integrante. |
+| `17_demo_url_despliegue.md` | Definir demo local o URL publica. |
+| `18_mockups_figma_cierre.md` | Cerrar evidencia de mockups/Figma. |
+| `19_guia_integracion_word_final.md` | Indicar inserciones al Word final. |
+| `20_release_tag_zip.md` | Preparar tag, ZIP limpio y SHA256. |
+| `21_estado_pruebas_instalacion.md` | Documentar bloqueo operativo de Composer/pruebas en este entorno. |
 
 Ademas, el cierre de DEF-001 incluye cambios de codigo en:
 
