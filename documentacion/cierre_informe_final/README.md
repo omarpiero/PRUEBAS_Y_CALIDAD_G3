@@ -24,3 +24,9 @@ Ademas, el cierre de DEF-001 incluye cambios de codigo en:
 - `app/Models/User.php`
 - `app/Http/Controllers/Admin/UserController.php`
 - `tests/Feature/AdminSecurityAndRolesTest.php`
+
+## Entregables finales agregados
+
+- `documentacion/informe_final_actualizado/INFORME_FINAL_ACTUALIZADO_G03.docx`: informe base complementado con Anexo D de cierre.
+- `documentacion/informe_final_actualizado/README.md`: verificacion estructural y nota sobre exportacion PDF pendiente.
+- `documentacion/presentacion_final/Presentacion_Final_LMS_G03.pptx`: diapositivas de sustentacion.

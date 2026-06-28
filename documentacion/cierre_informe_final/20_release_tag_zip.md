@@ -6,16 +6,17 @@ Fecha de cierre: 2026-06-27
 
 Dejar preparado el procedimiento de congelamiento de version final para evidencia academica y expediente legal.
 
-## Tag sugerido
+## Tag sugerido para el cierre completo
 
 ```text
-informe-final-g03-2026-06-27
+informe-final-g03-2026-06-27-v2
 ```
 
 El tag debe crearse sobre el commit final que incluya:
 
-- cierre documental 08-20,
+- cierre documental 08-21,
 - presentacion final,
+- informe Word actualizado,
 - correccion de DEF-001,
 - cualquier ajuste posterior de Word o evidencias.
 
@@ -23,9 +24,9 @@ El tag debe crearse sobre el commit final que incluya:
 
 ```bash
 git status
-git tag -a informe-final-g03-2026-06-27 -m "Version final informe Grupo 03"
-git archive --format=zip --output=documentacion/INDECOPI/entregables/JMJS-LMS-informe-final-g03-2026-06-27.zip HEAD
-Get-FileHash documentacion/INDECOPI/entregables/JMJS-LMS-informe-final-g03-2026-06-27.zip -Algorithm SHA256
+git tag -a informe-final-g03-2026-06-27-v2 -m "Version final completa informe Grupo 03"
+git archive --format=zip --output=documentacion/INDECOPI/entregables/JMJS-LMS-informe-final-g03-2026-06-27-v2.zip HEAD
+Get-FileHash documentacion/INDECOPI/entregables/JMJS-LMS-informe-final-g03-2026-06-27-v2.zip -Algorithm SHA256
 ```
 
 ## Archivos que no deben entrar al ZIP manual
@@ -50,6 +51,7 @@ Si se genera con una herramienta distinta de `git archive`, excluir:
 | SHA256 | Registrado en archivo o captura. |
 | Captura de pruebas | Adjunta a anexos. |
 | PPTX final | En `documentacion/presentacion_final/`. |
+| DOCX final actualizado | En `documentacion/informe_final_actualizado/`. |
 
 ## Criterio de aceptacion
 
