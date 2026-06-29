@@ -20,3 +20,5 @@ Esta carpeta agrupa los documentos y recursos que antes estaban en `documentacio
 ## Regla de uso
 
 Cuando una tarea de `documentacion/PENDIENTES/` quede revisada, integrada al informe o validada por el grupo, debe moverse a esta carpeta y actualizar las referencias que apunten a su ubicacion anterior.
+
+Cada avance movido o cerrado debe registrarse tambien en `documentacion/SEGUIMIENTO_CONTINUO.md`, indicando tarea, evidencia, estado y commit si corresponde.
