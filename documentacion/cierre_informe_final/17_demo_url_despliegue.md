@@ -25,7 +25,7 @@ El aplicativo fue validado en ambiente local de demostracion (`http://127.0.0.1:
 | Capturas admin | `documentacion/CAPTURAS/03_ADMIN/` |
 | Capturas estudiante | `documentacion/CAPTURAS/04_ESTUDIANTE/` |
 | Checklist deploy | `documentacion/CHECKLIST_DEPLOY_LMS.md` |
-| Despliegue Docker propuesto | `documentacion/PENDIENTES/DOCKER_DESPLIEGUE.md` |
+| Despliegue Docker propuesto | `documentacion/COMPLETADOS/DOCKER_DESPLIEGUE.md` |
 
 ## Checklist para declarar URL publica
 

@@ -1009,14 +1009,14 @@ pruebas-calidad-grupo-03/
 │   └── Unit/               # 12 tests unitarios
 ├── documentacion/
 │   ├── CAPTURAS/           # 21 capturas de pantalla reales
-│   ├── PENDIENTES/         # Markdowns técnicos por capítulo
+│   ├── COMPLETADOS/        # Markdowns técnicos por capítulo ya revisados
 │   └── PRUEBAS/            # Evidencias de ejecución de tests
 └── phpunit.xml             # Configuración del entorno de testing
 ```
 
 ## Anexo B: Macroprocesos del Sistema (BPMN Pendientes)
 
-El sistema LMS v2.0 se organiza en **8 macroprocesos** cuya descripción técnica completa está en `documentacion/PENDIENTES/MACROPROCESOS.md`:
+El sistema LMS v2.0 se organiza en **8 macroprocesos** cuya descripción técnica completa está en `documentacion/COMPLETADOS/MACROPROCESOS.md`:
 
 | ID | Macroproceso | Propietario | BPMN |
 |---|---|---|---|

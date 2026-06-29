@@ -20,7 +20,7 @@ Toda referencia antigua a `ROGERCanchumanyaUC/pruebas-calidad-grupo-03` debe tra
 | --- | --- | --- | --- | --- |
 | Omar Piero Terbullino Jaime | Coordinacion, Git, arquitectura y despliegue | Repositorio, integracion general, despliegue/demo y cierre documental | `git log`, `documentacion/cierre_informe_final/`, `CHECKLIST_DEPLOY_LMS.md` | Confirmar con commits reales |
 | Giancarlo Guerrero Cordova | QA, pruebas e ISO | Plan de pruebas, ISO 29119, metricas, evidencia de ejecucion | `tests/`, `documentacion/PRUEBAS/`, `documentacion/ISOS/` | Confirmar con commits reales |
-| Roger Moises Canchumanya Avellaneda | Diseno, matriz, macroprocesos y legal | Matriz doble entrada, macroprocesos, capturas/mockups, INDECOPI | `documentacion/PENDIENTES/`, `documentacion/CAPTURAS/`, `documentacion/INDECOPI/` | Confirmar con commits reales |
+| Roger Moises Canchumanya Avellaneda | Diseno, matriz, macroprocesos y legal | Matriz doble entrada, macroprocesos, capturas/mockups, INDECOPI | `documentacion/COMPLETADOS/`, `documentacion/CAPTURAS/`, `documentacion/INDECOPI/` | Confirmar con commits reales |
 
 ## Evidencia minima por integrante
 

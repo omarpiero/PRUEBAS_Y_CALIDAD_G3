@@ -90,7 +90,7 @@ Add-Bolt -intent "INT-012" -boltId "BOLT-001" -desc "Mapeo de rutas web, API y c
 # INT-013 Documentacion
 Add-Bolt -intent "INT-013" -boltId "BOLT-001" -desc "Agregar manuales de ISOS" -files @("documentacion\ISOS") -test "No aplica"
 Add-Bolt -intent "INT-013" -boltId "BOLT-002" -desc "Documentar pruebas y automatizacion" -files @("documentacion\PRUEBAS") -test "No aplica"
-Add-Bolt -intent "INT-013" -boltId "BOLT-003" -desc "Artefactos de planificacion e informes" -files @("documentacion\PENDIENTES", "documentacion\INFORMES") -test "No aplica"
+Add-Bolt -intent "INT-013" -boltId "BOLT-003" -desc "Artefactos de planificacion e informes" -files @("documentacion\COMPLETADOS", "documentacion\INFORMES") -test "No aplica"
 
 # Final Catch-All
 Add-Bolt -intent "INT-014" -boltId "BOLT-001" -desc "Consolidacion general y archivos de matriz" -files @(".") -test "LmsReleaseReadinessTest"

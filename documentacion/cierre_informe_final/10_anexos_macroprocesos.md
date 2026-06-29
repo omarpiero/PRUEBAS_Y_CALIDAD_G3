@@ -7,14 +7,14 @@ Objetivo: asegurar que los macroprocesos exigidos por el informe final queden ub
 
 | ID | Macroproceso | Tipo | Responsable operativo | Evidencia disponible |
 | --- | --- | --- | --- | --- |
-| MP-01 | Gestion del catalogo de cursos | Misional | Administrador / instructor | `documentacion/PENDIENTES/Recursos/Macroprocesos/MP-01 · Gestión del Catálogo de Cursos.png` |
-| MP-02 | Gestion de usuarios y roles | Apoyo | Administrador | `documentacion/PENDIENTES/Recursos/Macroprocesos/MP-02 · Gestión de Usuarios y Roles.png` |
-| MP-03 | Configuracion y auditoria | Apoyo | Administrador / soporte | `documentacion/PENDIENTES/Recursos/Macroprocesos/MP-03 · Configuración y Auditoría del Sistema.png` |
-| MP-04 | Exploracion y seleccion de cursos | Misional | Visitante / estudiante | `documentacion/PENDIENTES/Recursos/Macroprocesos/MP-04 · Exploración y Selección de Cursos.png` |
-| MP-05 | Compra y pago con Stripe | Misional | Estudiante / sistema | `documentacion/PENDIENTES/Recursos/Macroprocesos/MP-05 · Proceso de Compra y Pago con Stripe.png` |
-| MP-06 | Habilitacion y consumo de contenido | Misional | Estudiante / sistema | `documentacion/PENDIENTES/Recursos/Macroprocesos/MP-06 · Habilitación y Consumo de Contenido Educativo.png` |
-| MP-07 | Soporte inteligente IA | Apoyo | Chatbot / soporte | `documentacion/PENDIENTES/Recursos/Macroprocesos/MP-07 · Soporte Inteligente IA con Gemini.png` |
-| MP-08 | Monitoreo de indicadores | Estrategico | Administrador | `documentacion/PENDIENTES/Recursos/Macroprocesos/MP-08 · Monitoreo de Indicadores y Reportería.png` |
+| MP-01 | Gestion del catalogo de cursos | Misional | Administrador / instructor | `documentacion/COMPLETADOS/Recursos/Macroprocesos/MP-01 · Gestión del Catálogo de Cursos.png` |
+| MP-02 | Gestion de usuarios y roles | Apoyo | Administrador | `documentacion/COMPLETADOS/Recursos/Macroprocesos/MP-02 · Gestión de Usuarios y Roles.png` |
+| MP-03 | Configuracion y auditoria | Apoyo | Administrador / soporte | `documentacion/COMPLETADOS/Recursos/Macroprocesos/MP-03 · Configuración y Auditoría del Sistema.png` |
+| MP-04 | Exploracion y seleccion de cursos | Misional | Visitante / estudiante | `documentacion/COMPLETADOS/Recursos/Macroprocesos/MP-04 · Exploración y Selección de Cursos.png` |
+| MP-05 | Compra y pago con Stripe | Misional | Estudiante / sistema | `documentacion/COMPLETADOS/Recursos/Macroprocesos/MP-05 · Proceso de Compra y Pago con Stripe.png` |
+| MP-06 | Habilitacion y consumo de contenido | Misional | Estudiante / sistema | `documentacion/COMPLETADOS/Recursos/Macroprocesos/MP-06 · Habilitación y Consumo de Contenido Educativo.png` |
+| MP-07 | Soporte inteligente IA | Apoyo | Chatbot / soporte | `documentacion/COMPLETADOS/Recursos/Macroprocesos/MP-07 · Soporte Inteligente IA con Gemini.png` |
+| MP-08 | Monitoreo de indicadores | Estrategico | Administrador | `documentacion/COMPLETADOS/Recursos/Macroprocesos/MP-08 · Monitoreo de Indicadores y Reportería.png` |
 
 ## Ubicacion recomendada en el informe
 

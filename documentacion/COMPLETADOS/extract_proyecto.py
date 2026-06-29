@@ -1,8 +1,8 @@
 import os
 import PyPDF2
 
-pdf_path = r"c:\Users\zoomy\Downloads\BA\pruebas-calidad-grupo-03-feat_LMS_v2.0\pruebas-calidad-grupo-03-f\documentacion\PENDIENTES\Proyecto Final-G3.docx.pdf"
-output_path = r"c:\Users\zoomy\Downloads\BA\pruebas-calidad-grupo-03-feat_LMS_v2.0\pruebas-calidad-grupo-03-f\documentacion\PENDIENTES\extracted_proyecto.md"
+pdf_path = r"c:\Users\zoomy\Downloads\BA\pruebas-calidad-grupo-03-feat_LMS_v2.0\pruebas-calidad-grupo-03-f\documentacion\COMPLETADOS\Proyecto Final-G3.docx.pdf"
+output_path = r"c:\Users\zoomy\Downloads\BA\pruebas-calidad-grupo-03-feat_LMS_v2.0\pruebas-calidad-grupo-03-f\documentacion\COMPLETADOS\extracted_proyecto.md"
 
 with open(output_path, 'w', encoding='utf-8') as out_f:
     try:

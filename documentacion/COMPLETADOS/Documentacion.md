@@ -6,7 +6,7 @@
 
 ## 1. Mapeo de Capítulos del Proyecto Final vs. Archivos Markdown Generados
 
-La siguiente tabla relaciona los 14 capítulos estructurales exigidos en el informe final con los documentos técnicos generados en el directorio `PENDIENTES/` e `ISOS/`.
+La siguiente tabla relaciona los 14 capítulos estructurales exigidos en el informe final con los documentos técnicos generados en el directorio `COMPLETADOS/` e `ISOS/`.
 
 | Capítulo del Proyecto Final | Archivo(s) de Referencia (Markdown) | Contenido Principal / Justificación |
 |---|---|---|
