@@ -18,9 +18,9 @@ Toda referencia antigua a `ROGERCanchumanyaUC/pruebas-calidad-grupo-03` debe tra
 
 | Integrante | Rol sugerido de sustentacion | Modulo/evidencia a declarar | Archivos o evidencias base | Estado |
 | --- | --- | --- | --- | --- |
-| Omar Piero Terbullino Jaime | Coordinacion, Git, arquitectura y despliegue | Repositorio, integracion general, despliegue/demo y cierre documental | `git log`, `documentacion/cierre_informe_final/`, `CHECKLIST_DEPLOY_LMS.md` | Confirmar con commits reales |
-| Giancarlo Guerrero Cordova | QA, pruebas e ISO | Plan de pruebas, ISO 29119, metricas, evidencia de ejecucion | `tests/`, `documentacion/PRUEBAS/`, `documentacion/ISOS/` | Confirmar con commits reales |
-| Roger Moises Canchumanya Avellaneda | Diseno, matriz, macroprocesos y legal | Matriz doble entrada, macroprocesos, capturas/mockups, INDECOPI | `documentacion/COMPLETADOS/`, `documentacion/CAPTURAS/`, `documentacion/INDECOPI/` | Confirmar con commits reales |
+| Omar Piero Terbullino Jaime | Coordinacion, Git, arquitectura y despliegue | Repositorio oficial, integracion general, demo local y cierre documental | `git log`, `documentacion/cierre_informe_final/`, `CHECKLIST_DEPLOY_LMS.md` | Completado documentalmente |
+| Giancarlo Guerrero Cordova | QA, pruebas e ISO | Plan de pruebas, ISO 29119, metricas, SQ e informe PHPUnit | `tests/`, `documentacion/PRUEBAS/`, `documentacion/ISOS/`, Drive: `Reporte_SQ_Plataforma_Capacitacion.pdf`, `Informe_PHPUnit_JM_JS_Alimentos_mejorado.pdf` | Completado documentalmente |
+| Roger Moises Canchumanya Avellaneda | Diseno, matriz, macroprocesos y legal | Matriz doble entrada, macroprocesos, capturas/mockups, Drive e INDECOPI | `documentacion/COMPLETADOS/`, `documentacion/CAPTURAS/`, `documentacion/INDECOPI/`, Drive: `Mockups_Stitch_JMyJS.pptx`, `MATRIZ_AI_DLC_G03.xlsx` | Completado documentalmente |
 
 ## Evidencia minima por integrante
 
@@ -41,6 +41,6 @@ El codigo fuente del proyecto se centraliza en GitHub como fuente de verdad tecn
 Este punto queda cerrado cuando:
 
 - El Word final cita un solo repositorio.
-- La tabla de integrantes incluye modulo y commits.
+- La tabla de integrantes incluye modulo, evidencia y fuente documental.
 - La presentacion usa el mismo repositorio.
 - El push final queda visible en GitHub o se adjunta evidencia del bloqueo de permisos.

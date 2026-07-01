@@ -15,3 +15,12 @@ Esta carpeta queda reservada para los elementos que todavia no han sido revisado
 Los archivos que estaban anteriormente en `PENDIENTES` fueron migrados a `documentacion/COMPLETADOS/` porque ya forman parte del avance documental consolidado del proyecto.
 
 Para revisar el historial de tareas ya realizadas, consultar `documentacion/SEGUIMIENTO_CONTINUO.md`.
+
+## Pendientes reales al 2026-07-01
+
+| ID | Pendiente | Evidencia esperada |
+| --- | --- | --- |
+| P-001 | Exportar el Word final actualizado a PDF. | `documentacion/informe_final_actualizado/INFORME_FINAL_ACTUALIZADO_G03.pdf` |
+| P-002 | Revisar visualmente el PDF exportado. | Confirmar indice, tablas, capturas, anexos y portada sin cortes. |
+
+Los demas puntos documentales fueron cerrados con evidencia en GitHub y Google Drive.

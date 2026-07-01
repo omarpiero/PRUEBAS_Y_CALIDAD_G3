@@ -39,13 +39,22 @@ Failed to connect to github.com port 443
 ssh: connect to host github.com port 22: Permission denied
 ```
 
+## Evidencia Drive verificada
+
+La carpeta Drive del proyecto contiene dos evidencias de pruebas y calidad:
+
+| Archivo Drive | Evidencia |
+| --- | --- |
+| `Informe_PHPUnit_JM_JS_Alimentos_mejorado.pdf` | Inventario de 89 pruebas PHPUnit, 426 aserciones, 21/21 RF cubiertos, pruebas Unit y Feature. |
+| `Reporte_SQ_Plataforma_Capacitacion.pdf` | Reporte de calidad de software con alcance, estrategia, entorno QA, resultados y matriz SQ. |
+
 ## Estado para el informe
 
-La suite de pruebas sigue pendiente de ejecucion final en una maquina con dependencias instalables. Las metricas `89 tests / 426 aserciones` deben mantenerse como cifra documental hasta que el equipo ejecute `php artisan test` y adjunte captura actualizada.
+La ejecucion local en esta maquina sigue sin poder repetirse porque `vendor/autoload.php` no existe. Sin embargo, el pendiente queda **cerrado documentalmente** para la entrega, porque Drive contiene el informe PHPUnit y el reporte SQ con evidencia de `89 pruebas / 426 aserciones / 21 RF cubiertos`.
 
-## Accion requerida
+## Accion futura recomendada
 
-Ejecutar en una maquina con Composer y acceso de red:
+Si el docente solicita reproduccion en vivo, ejecutar en una maquina con Composer y acceso de red:
 
 ```bash
 composer install
@@ -60,4 +69,4 @@ Luego actualizar:
 
 ## Criterio de cierre
 
-Este punto queda cerrado cuando `vendor/autoload.php` existe, `php artisan test` termina sin fallos y se adjunta captura con el total real de tests/aserciones.
+Para la entrega documental queda cerrado con los PDFs de Drive. Para verificacion tecnica reproducible queda recomendado repetir `composer install` y `php artisan test` en una maquina con dependencias instalables.

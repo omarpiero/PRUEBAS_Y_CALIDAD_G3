@@ -5,7 +5,7 @@ Documento de apoyo para el apartado legal, anexos y recomendaciones del informe 
 
 ## Estado general
 
-El proyecto cuenta con una carpeta documental para preparar un expediente INDECOPI, pero el expediente no debe presentarse como cerrado hasta completar datos legales, firmas, titularidad y version final congelada.
+El proyecto cuenta con una carpeta documental para preparar un expediente INDECOPI. Para el informe academico, el punto queda completo como evidencia documental. Para una presentacion formal ante INDECOPI, todavia deben completarse datos legales, firmas, titularidad y validacion del titular.
 
 ## Ruta recomendada
 
@@ -30,7 +30,7 @@ El proyecto cuenta con una carpeta documental para preparar un expediente INDECO
 | Modelos de declaraciones | `documentacion/INDECOPI/09_MODELOS_DECLARACIONES.md` | Plantillas para firma. |
 | No datos reales | `documentacion/INDECOPI/12_DECLARACION_NO_DATOS_REALES.md` | Sustento de privacidad. |
 
-## Pendientes legales
+## Pendientes legales para tramite real
 
 | ID | Pendiente | Responsable sugerido | Evidencia requerida |
 | --- | --- | --- | --- |
@@ -48,7 +48,7 @@ El proyecto cuenta con documentacion preliminar para un expediente de proteccion
 
 ## Criterio de aceptacion
 
-El estado legal se considera completo para el informe cuando se incluyen:
+El estado legal se considera completo para el informe academico cuando se incluyen:
 
 - tabla de titularidad,
 - autores y aportes,
@@ -56,3 +56,5 @@ El estado legal se considera completo para el informe cuando se incluyen:
 - declaracion de licencias de terceros,
 - declaracion de no uso de datos personales reales,
 - ZIP/hash o tag final del codigo fuente.
+
+Estado de cierre: completado documentalmente para el informe. Las firmas y datos legales reales quedan como requisito externo solo si el grupo decide presentar el expediente formalmente.

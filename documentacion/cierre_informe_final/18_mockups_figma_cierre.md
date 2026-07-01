@@ -2,6 +2,7 @@
 
 Fecha de cierre: 2026-06-27  
 Archivo Figma referenciado: `https://www.figma.com/design/ysyZfEzFyakkGOxYBNhF8M`
+Evidencia Drive verificada: `Mockups_Stitch_JMyJS.pptx`
 
 ## Estado
 
@@ -22,7 +23,17 @@ El repositorio cuenta con capturas reales del LMS, pero el informe final debe di
 | Indice de capturas | `documentacion/CAPTURAS/INDICE.md` | Inventario de pantallas. |
 | Figma | `https://www.figma.com/design/ysyZfEzFyakkGOxYBNhF8M` | Prototipo/mockups de alta fidelidad. |
 
-## Pendiente operativo
+## Evidencia Drive agregada
+
+La carpeta de Drive contiene `Mockups_Stitch_JMyJS.pptx`, con prototipos organizados en tres areas funcionales:
+
+- Publico: sitio publico, catalogo, contacto e institucional.
+- Estudiante: inscripcion, pago seguro y aula virtual.
+- Administrativo: dashboard, administracion y modulos de operacion.
+
+El archivo documenta 22 pantallas prototipadas, 3 areas funcionales y el uso de Google Stitch como herramienta de diseno.
+
+## Pendiente operativo historico
 
 El documento previo indica que se subieron 12 de 21 capturas a Figma y quedaron 9 pendientes:
 
@@ -45,3 +56,5 @@ El punto queda cerrado cuando:
 - Se insertan capturas representativas.
 - Se indica estado de subida de pantallas.
 - Las capturas usadas no contienen datos personales reales.
+
+Estado de cierre: completado documentalmente con capturas del repo, enlace Figma y evidencia Drive de mockups Stitch.

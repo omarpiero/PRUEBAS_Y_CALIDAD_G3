@@ -10,7 +10,7 @@ No se ha verificado una URL publica de produccion. La evidencia disponible corre
 http://127.0.0.1:8000
 ```
 
-Por tanto, el informe no debe declarar despliegue comercial en produccion. Debe presentar el estado como demo local o MVP funcional avanzado hasta publicar una URL HTTPS real.
+Por tanto, el cierre de entrega se declara como **demo local / primera version MVP**, no como despliegue comercial en produccion. Esta decision cierra el punto para sustentacion academica bajo la opcion de demo local con capturas.
 
 ## Texto recomendado para el informe
 
@@ -27,7 +27,7 @@ El aplicativo fue validado en ambiente local de demostracion (`http://127.0.0.1:
 | Checklist deploy | `documentacion/CHECKLIST_DEPLOY_LMS.md` |
 | Despliegue Docker propuesto | `documentacion/COMPLETADOS/DOCKER_DESPLIEGUE.md` |
 
-## Checklist para declarar URL publica
+## Checklist futuro para declarar URL publica
 
 - [ ] Dominio o subdominio HTTPS activo.
 - [ ] `APP_URL` actualizado.
@@ -40,7 +40,4 @@ El aplicativo fue validado en ambiente local de demostracion (`http://127.0.0.1:
 
 ## Criterio de aceptacion
 
-El punto queda cerrado para sustentacion si el equipo elige una de estas dos opciones:
-
-1. Pegar URL publica HTTPS y evidencia de smoke test.
-2. Declarar formalmente demo local y adjuntar capturas como evidencia de primera version.
+El punto queda cerrado para sustentacion con la opcion 2: demo local formal, capturas del LMS y declaracion de primera version MVP. La URL publica queda como mejora futura si el equipo publica el aplicativo en hosting.

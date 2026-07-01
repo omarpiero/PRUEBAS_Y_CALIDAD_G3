@@ -16,6 +16,7 @@ Esta carpeta agrupa los documentos y recursos que antes estaban en `documentacio
 - Macroprocesos y diagramas asociados.
 - Borradores complementarios del informe final.
 - Recursos base usados para anexos y evidencias.
+- Evidencias externas verificadas en Google Drive (`EVIDENCIAS_DRIVE.md`).
 
 ## Regla de uso
 
