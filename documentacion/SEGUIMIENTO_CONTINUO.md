@@ -32,12 +32,12 @@ Este archivo centraliza el avance continuo del proyecto. Sirve para registrar lo
 | C-008 | 2026-06-27 | Tag completo de cierre final v2. | Tag `informe-final-g03-2026-06-27-v2`. | Completado | `71b2abf` |
 | C-009 | 2026-06-28 | Reorganizacion documental: avances movidos de `PENDIENTES` a `COMPLETADOS`. | `documentacion/COMPLETADOS/` y `documentacion/PENDIENTES/README.md`. | Completado | `fd63b00` |
 | C-010 | 2026-06-28 | Actualizacion de referencias internas hacia `COMPLETADOS`. | `documentacion/MATRIZ_24_06.md`, `documentacion/cierre_informe_final/10_anexos_macroprocesos.md`, `16_repositorio_modulos_integrantes.md`, `17_demo_url_despliegue.md`. | Completado | `fd63b00` |
-| C-011 | 2026-07-01 | Revision de carpeta Google Drive del proyecto. | `documentacion/COMPLETADOS/EVIDENCIAS_DRIVE.md`. | Completado | Pendiente de commit |
-| C-012 | 2026-07-01 | Cierre documental de pruebas y SQ con evidencia Drive. | Drive: `Informe_PHPUnit_JM_JS_Alimentos_mejorado.pdf`, `Reporte_SQ_Plataforma_Capacitacion.pdf`; repo: `documentacion/cierre_informe_final/21_estado_pruebas_instalacion.md`. | Completado | Pendiente de commit |
-| C-013 | 2026-07-01 | Cierre documental de mockups/prototipos. | Drive: `Mockups_Stitch_JMyJS.pptx`; repo: `documentacion/cierre_informe_final/18_mockups_figma_cierre.md`. | Completado | Pendiente de commit |
-| C-014 | 2026-07-01 | Cierre de estado del arte con PDF externo. | Drive: `Estado_del_Arte_JM_JS_Alimentos.pdf`. | Completado | Pendiente de commit |
-| C-015 | 2026-07-01 | Cierre de repositorio principal y backup/documentacion externa. | GitHub oficial: `https://github.com/omarpiero/PRUEBAS_Y_CALIDAD_G3.git`; Drive compartido como respaldo documental. | Completado | Pendiente de commit |
-| C-016 | 2026-07-01 | Cierre academico legal/INDECOPI. | `documentacion/INDECOPI/`, `documentacion/cierre_informe_final/12_estado_legal_indecopi.md`. | Completado | Pendiente de commit |
+| C-011 | 2026-07-01 | Revision de carpeta Google Drive del proyecto. | `documentacion/COMPLETADOS/EVIDENCIAS_DRIVE.md`. | Completado | `2df2ecd` |
+| C-012 | 2026-07-01 | Cierre documental de pruebas y SQ con evidencia Drive. | Drive: `Informe_PHPUnit_JM_JS_Alimentos_mejorado.pdf`, `Reporte_SQ_Plataforma_Capacitacion.pdf`; repo: `documentacion/cierre_informe_final/21_estado_pruebas_instalacion.md`. | Completado | `2df2ecd` |
+| C-013 | 2026-07-01 | Cierre documental de mockups/prototipos. | Drive: `Mockups_Stitch_JMyJS.pptx`; repo: `documentacion/cierre_informe_final/18_mockups_figma_cierre.md`. | Completado | `2df2ecd` |
+| C-014 | 2026-07-01 | Cierre de estado del arte con PDF externo. | Drive: `Estado_del_Arte_JM_JS_Alimentos.pdf`. | Completado | `2df2ecd` |
+| C-015 | 2026-07-01 | Cierre de repositorio principal y backup/documentacion externa. | GitHub oficial: `https://github.com/omarpiero/PRUEBAS_Y_CALIDAD_G3.git`; Drive compartido como respaldo documental. | Completado | `2df2ecd` |
+| C-016 | 2026-07-01 | Cierre academico legal/INDECOPI. | `documentacion/INDECOPI/`, `documentacion/cierre_informe_final/12_estado_legal_indecopi.md`. | Completado | `2df2ecd` |
 
 ## Avances completados sin commit directo en el repo
 
